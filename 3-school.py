@@ -13,6 +13,7 @@ class School:
         self.physics = physics
         self.turks = turks
         School.students.append(self)
+
         if int(self.mat) > 50:
             School.mathematic_pass[self.name] = self.mat
         if int(self.physics) > 50:
@@ -60,6 +61,7 @@ print(len(School.students))
 # matematik dersinden gecen ogrencilerin ismini gosteren
 # print(School.mat_student())
 
+
 # fizik dersinden gecen ogrencilerin ismini gosteren
 # print(School.physics_student())
 
@@ -69,3 +71,7 @@ print(len(School.students))
 # c)uc notun ortalamasinin 50 ustunde olanlarin isi sinifi gectigini dusunursek
 # sinifi gecenlerin tum bilgilerini gosteren program
 # print(School.student_pass())
+
+
+# for i in School.sinifi_gecenler:
+#     print(i)
